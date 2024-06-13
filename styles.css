@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'HSSanTokki20-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405@1.0/HSSanTokki20-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: Arial, sans-serif, 'HSSanTokki20-Regular';
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'HSSanTokki20-Regular';
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.option {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.option:hover {
+    background-color: #0056b3;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
