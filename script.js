@@ -51,15 +51,12 @@ document.addEventListener('DOMContentLoaded', function() {
         };
         document.getElementById('share-kakao').onclick = function() {
             Kakao.Link.sendDefault({
-                objectType: 'feed',
-                content: {
-                    title: '공유할 제목',
-                    description: '공유할 설명',
-                    imageUrl: 'https://yourdomain.com/path/to/image.jpg', // 대표 이미지 URL
-                    link: {
-                    mobileWebUrl: 'https://yourdomain.com',
-                    webUrl: 'https://yourdomain.com'
-                    }
+                objectType: 'text',
+                text: `나의 MBTI 유형은 ${result}입니다!`,
+                imageUrl: 'https://github.com/ahngibs/project_1/blob/main/og_image.png',
+                link: {
+                    mobileWebUrl: window.location.href,
+                    webUrl: window.location.href
                 }
             });
         };
