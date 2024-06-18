@@ -35,9 +35,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const resultText = `당신의 MBTI 유형은 ${result}입니다.`;
 
+        // 결과 텍스트 설정
         document.getElementById('quiz').classList.add('hidden');
         document.getElementById('result').classList.remove('hidden');
         document.getElementById('result-text').textContent = resultText;
+
+        // 결과 이미지 설정
+        const resultImage = document.getElementById('result-image');
+        switch(result) {
+            case 'ENFJ':
+                resultImage.src = 'images/enfj.png'; // 실제 이미지 경로로 변경
+                break;
+            case 'ISTP':
+                resultImage.src = 'images/istp.png'; // 실제 이미지 경로로 변경
+                break;
+            // 다른 MBTI 유형에 대한 케이스 추가
+            default:
+                resultImage.src = ''; // 기본 이미지 경로 설정 또는 일치하는 이미지 없는 경우
+        }
 
         // 공유 버튼 클릭 이벤트 설정
         const shareUrl = encodeURIComponent(window.location.href);
