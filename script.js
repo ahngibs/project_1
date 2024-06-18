@@ -50,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
             window.open(`https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}`, '_blank');
         };
         document.getElementById('share-kakao').onclick = function() {
-            var result = "결과값"; // 여기에 실제 결과값을 설정하세요
             Kakao.Link.sendDefault({
               objectType: 'feed',
               content: {
