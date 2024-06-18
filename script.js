@@ -51,27 +51,27 @@ document.addEventListener('DOMContentLoaded', function() {
         };
         document.getElementById('share-kakao').onclick = function() {
             Kakao.Link.sendDefault({
-              objectType: 'feed',
-              content: {
-                title: 'MBTI 유형 결과',
-                description: `나의 MBTI 유형은 ${result}입니다!`,
-                imageUrl: 'https://github.com/ahngibs/project_1/blob/main/og_image.png',
-                link: {
-                  mobileWebUrl: window.location.href,
-                  webUrl: window.location.href
-                }
-              },
-              buttons: [
-                {
-                  title: '웹으로 보기',
-                  link: {
-                    mobileWebUrl: window.location.href,
-                    webUrl: window.location.href
-                  }
-                }
-              ]
+                objectType: 'feed',
+                content: {
+                    title: 'MBTI 유형 결과',
+                    description: `나의 MBTI 유형은 ${result}입니다!`,
+                    imageUrl: 'https://github.com/ahngibs/project_1/blob/main/og_image.png',
+                    link: {
+                        mobileWebUrl: window.location.href,
+                        webUrl: window.location.href
+                    }
+                },
+                buttons: [
+                    {
+                        title: '웹으로 보기',
+                        link: {
+                            mobileWebUrl: window.location.href,
+                            webUrl: window.location.href
+                        }
+                    }
+                ]
             });
-          };
+        };
     }
 
     document.getElementById('restart').addEventListener('click', function() {
