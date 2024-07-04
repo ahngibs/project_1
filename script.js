@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // 다른 MBTI 유형에 대한 케이스 추가
             default:
                 resultImage.src = 'og_image.png'; // 기본 이미지 경로 설정 또는 일치하는 이미지 없는 경우
+                resultImage.src = resultImageUrl;
         }
 
         // 공유 버튼 클릭 이벤트 설정
