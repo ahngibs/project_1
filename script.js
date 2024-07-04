@@ -44,10 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const resultImage = document.getElementById('result-image');
         let resultImageUrl = ''; // 결과 이미지 URL 변수
         switch(result) {
-            case 'ENFJ':
-                resultImageUrl = 'images/enfj.png'; // 실제 이미지 경로로 변경
-                resultImage.src = resultImageUrl;
-                break;
             case 'INFP':
                 resultImageUrl = 'https://ddnews.co.kr/wp-content/uploads/2021/12/b3aff9b2f4d397734e27f42f705b9e2d6c4f3bf5_re_1614431436738.jpg'; // 실제 이미지 경로로 변경
                 resultImage.src = resultImageUrl;
