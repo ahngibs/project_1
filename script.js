@@ -42,17 +42,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // 결과 이미지 설정
         const resultImage = document.getElementById('result-image');
-        let resultImageUrl = ''; // 결과 이미지 URL 변수
+        let resultImageUrl = 'images/default.png'; // 디폴트 이미지 경로
         switch(result) {
             case 'INFP':
                 resultImageUrl = 'https://ddnews.co.kr/wp-content/uploads/2021/12/b3aff9b2f4d397734e27f42f705b9e2d6c4f3bf5_re_1614431436738.jpg'; // 실제 이미지 경로로 변경
-                resultImage.src = resultImageUrl;
                 break;
-                // 다른 MBTI 유형에 대한 케이스 추가
+            // 추가적인 MBTI 유형에 대한 케이스를 여기 추가할 수 있습니다
             default:
-            resultImageUrl = 'og_image.png';
-            resultImage.src = resultImageUrl;
+                resultImageUrl = 'og_image.png'; // 기본 이미지 경로 설정
         }
+        resultImage.src = resultImageUrl;
 
         // 공유 버튼 클릭 이벤트 설정
         const shareUrl = encodeURIComponent(window.location.href);
