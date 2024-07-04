@@ -74,8 +74,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     title: 'MBTI 유형 결과',
                     description: `나의 MBTI 유형은 ${result}입니다!`,
                     imageUrl: resultImageUrl, // 결과 이미지 URL 설정
-                    imageWidth: 600, // 원하는 이미지 너비 설정
-                    imageHeight: 600, // 원하는 이미지 높이 설정
+                    imageWidth: 300, // 원하는 이미지 너비 설정
+                    imageHeight: 300, // 원하는 이미지 높이 설정
                     link: {
                         mobileWebUrl: window.location.href,
                         webUrl: window.location.href
