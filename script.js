@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 break;
             // 추가적인 MBTI 유형에 대한 케이스를 여기 추가할 수 있습니다
             default:
-                resultImageUrl = 'og_image.png'; // 기본 이미지 경로 설정
+                resultImageUrl = 'https://ahngibs.github.io/project_1/og_image.png'; // 기본 이미지 경로 설정
         }
         resultImage.src = resultImageUrl;
 
