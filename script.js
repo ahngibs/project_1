@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 break;
             // 다른 MBTI 유형에 대한 케이스 추가
             default:
-                resultImage.src = 'og_image.png'; // 기본 이미지 경로 설정 또는 일치하는 이미지 없는 경우
+                resultImage.src = 'https://ddnews.co.kr/wp-content/uploads/2021/12/b3aff9b2f4d397734e27f42f705b9e2d6c4f3bf5_re_1614431436738.jpg'; // 기본 이미지 경로 설정 또는 일치하는 이미지 없는 경우
         }
 
         // 공유 버튼 클릭 이벤트 설정
