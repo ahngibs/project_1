@@ -49,9 +49,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 resultImage.src = resultImageUrl;
                 break;
                 // 다른 MBTI 유형에 대한 케이스 추가
-                default:
-                resultImageUrl = 'og_image.png';
-                resultImage.src = resultImageUrl;
+            default:
+            resultImageUrl = 'og_image.png';
+            resultImage.src = resultImageUrl;
         }
 
         // 공유 버튼 클릭 이벤트 설정
