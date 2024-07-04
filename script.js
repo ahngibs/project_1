@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let resultImageUrl = 'images/default.png'; // 디폴트 이미지 경로
         switch(result) {
             case 'INFP':
-                resultImageUrl = 'https://mblogthumb-phinf.pstatic.net/MjAyMDA5MDZfMjEz/MDAxNTk5MzYyMjQ1MzA0.s9bxF2E-wDag_MOb85jCOIqafwx_OwUDv1CLWZAJUvkg.zLaZiwbYq9dYzpFr0c9y4ogQeYC-aqgpWtbhUVfaAeAg.PNG.jamsys/20200906_포스팅_이미지.png?type=w800'; // 실제 이미지 경로로 변경
+                resultImageUrl = 'https://ahngibs.github.io/project_1/result_image/INFP.png'; // 실제 이미지 경로로 변경
                 break;
             // 추가적인 MBTI 유형에 대한 케이스를 여기 추가할 수 있습니다
             default:
