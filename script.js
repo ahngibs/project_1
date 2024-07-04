@@ -42,12 +42,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // 결과 이미지 설정
         const resultImage = document.getElementById('result-image');
+        let resultImageUrl = ''; // 결과 이미지 URL 변수
         switch(result) {
             case 'ENFJ':
-                resultImage.src = 'images/enfj.png'; // 실제 이미지 경로로 변경
+                resultImageUrl = 'images/enfj.png'; // 실제 이미지 경로로 변경
+                resultImage.src = resultImageUrl;
                 break;
-            case 'ISTP':
-                resultImage.src = 'images/istp.png'; // 실제 이미지 경로로 변경
+            case 'INFP':
+                resultImageUrl = 'https://ddnews.co.kr/wp-content/uploads/2021/12/b3aff9b2f4d397734e27f42f705b9e2d6c4f3bf5_re_1614431436738.jpg'; // 실제 이미지 경로로 변경
+                resultImage.src = resultImageUrl;
                 break;
             // 다른 MBTI 유형에 대한 케이스 추가
             default:
@@ -70,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 content: {
                     title: 'MBTI 유형 결과',
                     description: `나의 MBTI 유형은 ${result}입니다!`,
-                    imageUrl: 'https://github.com/ahngibs/project_1/blob/main/og_image.png',
+                    imageUrl: resultImageUrl, // 결과 이미지 URL 설정
                     link: {
                         mobileWebUrl: window.location.href,
                         webUrl: window.location.href
